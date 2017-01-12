@@ -14,7 +14,7 @@ default: &default
   encoding: utf8
   pool: 5
   username: root
-  password:
+  password: baobab37!@#
   host: localhost
 
 development:
@@ -49,6 +49,4 @@ test:
 #
 production:
   <<: *default
-  database: Captest_production
-  username: Captest
-  password: <%= ENV['CAPTEST_DATABASE_PASSWORD'] %>
+  database: captest
